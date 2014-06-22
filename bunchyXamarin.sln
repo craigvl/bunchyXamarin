@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "bunchyXamarin", "bunchyXamarin\bunchyXamarin.shproj", "{895ECD95-D049-45F8-A6BC-FDAB2D019191}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "bunchyXamarin.Android", "Android\bunchyXamarin.Android.csproj", "{675D803E-454D-44AE-A539-5673EF8131CB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{675D803E-454D-44AE-A539-5673EF8131CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{675D803E-454D-44AE-A539-5673EF8131CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{675D803E-454D-44AE-A539-5673EF8131CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{675D803E-454D-44AE-A539-5673EF8131CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{895ECD95-D049-45F8-A6BC-FDAB2D019191}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{895ECD95-D049-45F8-A6BC-FDAB2D019191}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{895ECD95-D049-45F8-A6BC-FDAB2D019191}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{895ECD95-D049-45F8-A6BC-FDAB2D019191}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Android\bunchyXamarin.Android.csproj
+	EndGlobalSection
+EndGlobal
