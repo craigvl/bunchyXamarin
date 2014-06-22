@@ -12,7 +12,7 @@ using Xamarin.Forms.Platform.Android;
 
 namespace bunchyXamarin.Android
 {
-	[Activity (Label = "bunchyXamarin.Android.Android", MainLauncher = true)]
+	[Activity (Label = "Bunchy", MainLauncher = true)]
 	public class MainActivity : AndroidActivity
 	{
 		protected override void OnCreate (Bundle bundle)
