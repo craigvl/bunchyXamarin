@@ -2,6 +2,7 @@
 using bunchyXamarin.ViewModels;
 using Xamarin.Forms;
 using bunchyXamarin.Models;
+using bunchyXamarin.Services;
 
 namespace bunchyXamarin.Pages
 {
@@ -17,6 +18,9 @@ namespace bunchyXamarin.Pages
 				Spacing = 10,
 				Children = {userName}
 			};
+
+			BunchyService service = new BunchyService();
+			var Location = service.GetLocation(_User.UserName);
 
 		}
 	}

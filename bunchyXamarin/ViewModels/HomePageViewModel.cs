@@ -30,7 +30,7 @@ namespace bunchyXamarin.ViewModels
 
 		public HomePageViewModel ()
 		{
-		
+
 		}
 	}
 }

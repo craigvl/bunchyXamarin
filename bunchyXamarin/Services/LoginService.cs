@@ -40,8 +40,9 @@ namespace bunchyXamarin.Services
 			}
 			catch (Exception ex)
 			{
-				//throw new SecurityException("Bad credentials", ex);
-				return null;
+				TokenResponseModel tokenResponse = new TokenResponseModel();
+				tokenResponse.AccessToken = null;
+				return tokenResponse;
 			}	
 		}
 	}
