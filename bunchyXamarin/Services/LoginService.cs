@@ -13,7 +13,7 @@ namespace bunchyXamarin.Services
 {
 	class LoginService
 	{
-		public async Task<string> Login(string username, string password)
+		public async Task<TokenResponseModel> Login(string username, string password)
 		{
 			//HttpWebRequest request = new HttpWebRequest(new Uri("http://192.168.56.1:1524/token"));
 			HttpWebRequest request = new HttpWebRequest(new Uri("http://bunchyapi.azurewebsites.net/token"));
@@ -36,7 +36,7 @@ namespace bunchyXamarin.Services
 					json = new StreamReader(responseStream).ReadToEnd();
 				}
 				TokenResponseModel tokenResponse = JsonConvert.DeserializeObject<TokenResponseModel>(json);
-				return tokenResponse.AccessToken;
+				return tokenResponse;
 			}
 			catch (Exception ex)
 			{
