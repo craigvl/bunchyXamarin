@@ -20,6 +20,10 @@
     <Compile Include="$(MSBuildThisFileDirectory)Services\BunchyService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\HomePageModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\BunchListModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\BunchListCell.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\BunchItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\BunchItemPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\KeenRidersModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Pages\" />

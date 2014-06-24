@@ -3,6 +3,7 @@ using bunchyXamarin.ViewModels;
 using Xamarin.Forms;
 using bunchyXamarin.Models;
 using bunchyXamarin.Services;
+using bunchyXamarin.Pages;
 
 namespace bunchyXamarin.Pages
 {
@@ -19,28 +20,23 @@ namespace bunchyXamarin.Pages
 			userName.Text = "Welcome " + _User.UserName + _HomePageModel.Location ;
 
 			ListView listview = new ListView();
-			listview.ItemsSource = new string [] { "Buy pears", "Buy oranges", "Buy mangos", "Buy apples", "Buy bananas" };
-			//listview.ItemsSource = service.GetBunches("ss");
+			listview.ItemTemplate = new DataTemplate (typeof(BunchListCell));
+			//listview.ItemsSource = new string [] { "Buy pears", "Buy oranges", "Buy mangos", "Buy apples", "Buy bananas" };
+			listview.ItemsSource = service.GetBunches(_HomePageModel.Location);
+			listview.ItemSelected += (sender, e) => {
 
+				var bunchItem = (BunchListModel)e.SelectedItem;
+				var bunchPage = new BunchItemPage (bunchItem);
+				bunchPage.BindingContext = bunchItem;
+				Navigation.PushAsync (bunchPage);
 
-
-			//			listView.ItemSource = new TodoItem [] { 
-			//				new TodoItem {Name = "Buy pears`"}, 
-			//				new TodoItem {Name = "Buy oranges`", Done=true},
-			//				new TodoItem {Name = "Buy mangos`"}, 
-			//				new TodoItem {Name = "Buy apples`", Done=true},
-			//				new TodoItem {Name = "Buy bananas`", Done=true}
-			//			};
-
+			};
 
 			Content = new StackLayout {
 				Padding = 10,
 				Spacing = 10,
 				Children = {userName, listview}
 			};
-
-
 		}
 	}
 }
-

@@ -1,18 +1,36 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="bunchyXamarin\Pages\HomePage.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="bunchyXamarin\Pages\BunchItemPage.cs">
     <Files>
-      <File FileName="bunchyXamarin\Pages\HomePage.cs" Line="22" Column="15" />
+      <File FileName="bunchyXamarin\Pages\HomePage.cs" Line="14" Column="48" />
       <File FileName="bunchyXamarin\Pages\LoginPage.cs" Line="1" Column="1" />
       <File FileName="bunchyXamarin\ViewModels\HomePageViewModel.cs" Line="1" Column="1" />
-      <File FileName="bunchyXamarin\ViewModels\LoginViewModel.cs" Line="69" Column="37" />
+      <File FileName="bunchyXamarin\ViewModels\LoginViewModel.cs" Line="1" Column="1" />
       <File FileName="bunchyXamarin\Models\User.cs" Line="1" Column="1" />
       <File FileName="bunchyXamarin\Models\TokenResponseModel.cs" Line="1" Column="1" />
-      <File FileName="bunchyXamarin\Services\LoginService.cs" Line="13" Column="2" />
-      <File FileName="bunchyXamarin\Services\BunchyService.cs" Line="19" Column="16" />
+      <File FileName="bunchyXamarin\Services\LoginService.cs" Line="1" Column="1" />
+      <File FileName="bunchyXamarin\Services\BunchyService.cs" Line="72" Column="27" />
       <File FileName="bunchyXamarin\Models\HomePageModel.cs" Line="9" Column="39" />
-      <File FileName="bunchyXamarin\Models\BunchListModel.cs" Line="1" Column="1" />
+      <File FileName="bunchyXamarin\Models\BunchListModel.cs" Line="13" Column="24" />
+      <File FileName="bunchyXamarin\Pages\BunchListCell.cs" Line="18" Column="25" />
+      <File FileName="bunchyXamarin\Models\BunchItem.cs" Line="7" Column="34" />
+      <File FileName="bunchyXamarin\Pages\BunchItemPage.cs" Line="11" Column="4" />
+      <File FileName="bunchyXamarin\Models\KeenRidersModel.cs" Line="9" Column="3" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="bunchyXamarin" expanded="True">
+            <Node name="Models" expanded="True">
+              <Node name="BunchListModel.cs" selected="True" />
+            </Node>
+            <Node name="Pages" expanded="True" />
+            <Node name="Services" expanded="True" />
+            <Node name="ViewModels" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
