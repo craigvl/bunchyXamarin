@@ -5,16 +5,8 @@ namespace bunchyXamarin
 {
 	public class HomePageModel
 	{
-
-		[JsonProperty("Location")]
+		[JsonProperty("Name")]
 		public string Location { get; set; }
-
-		public HomePageModel ()
-		{
-
-
-
-		}
 	}
 }
 
