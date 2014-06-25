@@ -2,6 +2,7 @@
 using Xamarin.Forms;
 using bunchyXamarin.Models;
 using bunchyXamarin.Services;
+using bunchyXamarin.Pages;
 
 namespace bunchyXamarin.Pages
 {
@@ -23,7 +24,7 @@ namespace bunchyXamarin.Pages
 
 				VerticalOptions = LayoutOptions.StartAndExpand,
 				Padding = new Thickness (20),
-				Children = {label}
+				Children = {label, listview}
 			};
 		}
 	}

@@ -13,7 +13,7 @@ namespace bunchyXamarin.Services
 		public HomePageModel GetLocation(string username)
 		{
 			//var request = HttpWebRequest.Create(string.Format(@"http://localhost:1524/api/location/get/{0}", username));
-			var request = HttpWebRequest.Create(string.Format(@"http://192.168.56.1:1524/api/location/get/{0}", username));
+			var request = HttpWebRequest.Create(string.Format(@"http://bunchyapi.azurewebsites.net/api/location/get/{0}", username));
 			request.ContentType = "application/json";
 			request.Method = "GET";
 
@@ -39,8 +39,8 @@ namespace bunchyXamarin.Services
 
 		public List<BunchListModel> GetBunches(string username)
 		{
-			//var request = HttpWebRequest.Create(string.Format(@"http://localhost:1524/api/location/{0}", username));
-			var request = HttpWebRequest.Create(string.Format(@"http://192.168.56.1:1524/api/bunch/get/{0}", "townsville"));
+			var request = HttpWebRequest.Create(string.Format(@"http://bunchyapi.azurewebsites.net/api/bunch/get/{0}", "townsville"));
+			//var request = HttpWebRequest.Create(string.Format(@"http://192.168.56.1:1524/api/bunch/get/{0}", "townsville"));
 			request.ContentType = "application/json";
 			request.Method = "GET";
 
@@ -64,10 +64,10 @@ namespace bunchyXamarin.Services
 			}
 		}
 
-		public List<BunchListModel> GetRiders(string rideid)
+		public List<KeenRidersModel> GetRiders(int rideid)
 		{
 			//var request = HttpWebRequest.Create(string.Format(@"http://localhost:1524/api/location/getriders/{0}", username));
-			var request = HttpWebRequest.Create(string.Format(@"http://192.168.56.1:1524/api/bunch/getriders/{0}", rideid));
+			var request = HttpWebRequest.Create(string.Format(@"http://bunchyapi.azurewebsites.net/api/bunch/getriders/{0}", rideid.ToString()));
 			request.ContentType = "application/json";
 			request.Method = "GET";
 

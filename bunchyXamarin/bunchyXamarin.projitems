@@ -24,6 +24,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Models\BunchItem.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Pages\BunchItemPage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\KeenRidersModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\BunchRidersCell.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Pages\" />
