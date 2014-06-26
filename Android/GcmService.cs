@@ -13,6 +13,8 @@ using ByteSmith.WindowsAzure.Messaging;
 using System.Diagnostics;
 using System.Collections.Generic;
 using System;
+using bunchyXamarin.Models;
+using Xamarin.Forms;
 
 [assembly: Permission(Name = "@PACKAGE_NAME@.permission.C2D_MESSAGE")]
 [assembly: UsesPermission(Name = "@PACKAGE_NAME@.permission.C2D_MESSAGE")]
@@ -70,8 +72,11 @@ namespace bunchyXamarin.Android
 				Debug.WriteLine(ex.Message);
 				Debugger.Break();
 			}
+				
+			bunchyXamarin.Android.prefs pre	= new bunchyXamarin.Android.prefs(Forms.Context);
+			string username = pre.getUserName();
 
-			var tags = new List<string>() { "falcons" }; // create tags if you want
+			var tags = new List<string>() { username }; // create tags if you want
 
 			try
 			{

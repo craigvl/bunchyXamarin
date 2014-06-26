@@ -25,7 +25,7 @@ namespace bunchyXamarin.Android
 			SetPage (App.GetMainPage ());
 		}
 
-		public void RegisterWithGCM(Context c)
+		public void RegisterWithGCMAndriod(Context c)
 		{
 			// Check to ensure everything's setup right
 			GcmClient.CheckDevice(c);

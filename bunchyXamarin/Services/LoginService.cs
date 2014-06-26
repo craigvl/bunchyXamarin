@@ -39,8 +39,14 @@ namespace bunchyXamarin.Services
 					json = new StreamReader(responseStream).ReadToEnd();
 				}
 				TokenResponseModel tokenResponse = JsonConvert.DeserializeObject<TokenResponseModel>(json);
+
+				#if __ANDROID__
+				bunchyXamarin.Android.prefs pre	= new bunchyXamarin.Android.prefs(Forms.Context);
+				pre.saveUserName(username);
 				bunchyXamarin.Android.MainActivity ii = new bunchyXamarin.Android.MainActivity();
-				ii.RegisterWithGCM(Forms.Context);
+				ii.RegisterWithGCMAndriod(Forms.Context);
+				#endif
+
 				return tokenResponse;
 			}
 			catch (Exception ex)
