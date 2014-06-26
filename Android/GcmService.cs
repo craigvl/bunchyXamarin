@@ -65,7 +65,7 @@ namespace bunchyXamarin.Android
 			Hub = new NotificationHub(Constants.NotificationHubPath, Constants.ConnectionString);
 			try
 			{
-				await Hub.UnregisterAllAsync(registrationId);
+				//await Hub.UnregisterAllAsync(registrationId);
 			}
 			catch (Exception ex)
 			{
