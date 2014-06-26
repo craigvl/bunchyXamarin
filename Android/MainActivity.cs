@@ -20,21 +20,20 @@ namespace bunchyXamarin.Android
 		protected override void OnCreate (Bundle bundle)
 		{
 			base.OnCreate (bundle);
-
 			Xamarin.Forms.Forms.Init (this, bundle);
-			RegisterWithGCM ();
+			//RegisterWithGCM ();
 			SetPage (App.GetMainPage ());
 		}
 
-		private void RegisterWithGCM()
+		public void RegisterWithGCM(Context c)
 		{
 			// Check to ensure everything's setup right
-			GcmClient.CheckDevice(this);
-			GcmClient.CheckManifest(this);
+			GcmClient.CheckDevice(c);
+			GcmClient.CheckManifest(c);
 
 			// Register for push notifications
 			System.Diagnostics.Debug.WriteLine("Registering...");
-			GcmClient.Register(this, Constants.SenderID);
+			GcmClient.Register(c, Constants.SenderID);
 		}
 
 	}

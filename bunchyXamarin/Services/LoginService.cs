@@ -8,6 +8,8 @@ using Newtonsoft.Json;
 using bunchyXamarin.Models;
 using System.Web;
 using Android.Util; 
+using Gcm.Client;
+using Xamarin.Forms;
 
 namespace bunchyXamarin.Services
 {
@@ -37,6 +39,8 @@ namespace bunchyXamarin.Services
 					json = new StreamReader(responseStream).ReadToEnd();
 				}
 				TokenResponseModel tokenResponse = JsonConvert.DeserializeObject<TokenResponseModel>(json);
+				bunchyXamarin.Android.MainActivity ii = new bunchyXamarin.Android.MainActivity();
+				ii.RegisterWithGCM(Forms.Context);
 				return tokenResponse;
 			}
 			catch (Exception ex)
