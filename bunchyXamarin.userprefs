@@ -1,6 +1,6 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Android\GcmService.cs">
     <Files>
       <File FileName="bunchyXamarin\Pages\HomePage.cs" Line="1" Column="1" />
       <File FileName="bunchyXamarin\Pages\LoginPage.cs" Line="1" Column="1" />
@@ -15,24 +15,17 @@
       <File FileName="bunchyXamarin\Pages\BunchListCell.cs" Line="1" Column="1" />
       <File FileName="bunchyXamarin\Models\BunchItem.cs" Line="1" Column="1" />
       <File FileName="bunchyXamarin\Models\KeenRidersModel.cs" Line="1" Column="1" />
-      <File FileName="bunchyXamarin\Pages\BunchRidersCell.cs" Line="29" Column="18" />
+      <File FileName="bunchyXamarin\Pages\BunchRidersCell.cs" Line="1" Column="1" />
       <File FileName="c:\Users\craig\Documents\Visual Studio 2013\Projects\bunchyXamarin\bunchyXamarin\Pages\BunchItemPage.cs" Line="1" Column="1" />
+      <File FileName="bunchyXamarin\Services\HubService.cs" Line="1" Column="1" />
+      <File FileName="Android\Constants.cs" Line="1" Column="1" />
+      <File FileName="Android\MainActivity.cs" Line="14" Column="1" />
+      <File FileName="Android\GcmService.cs" Line="156" Column="66" />
+      <File FileName="Android\Resources\Resource.designer.cs" Line="1" Column="1" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State expanded="True">
-          <Node name="bunchyXamarin" expanded="True" />
-          <Node name="bunchyXamarin.Android" expanded="True">
-            <Node name="ComponentReferenceFolder" selected="True" />
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="C:\Users\craig\Documents\Visual Studio 2013\Projects\bunchyXamarin\bunchyXamarin\Services\BunchyService.cs" line="42" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.bunchyXamarin.Android AndroidDeviceId-Debug="BX903AWE8B" />

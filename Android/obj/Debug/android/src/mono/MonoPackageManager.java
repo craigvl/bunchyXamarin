@@ -67,6 +67,8 @@ public class MonoPackageManager {
 class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
 		"bunchyXamarin.Android.dll",
+		"ByteSmith.WindowsAzure.Messaging.Android.dll",
+		"GCM.Client.dll",
 		"Newtonsoft.Json.dll",
 		"Xamarin.Android.Support.v4.dll",
 		"Xamarin.Forms.Core.dll",

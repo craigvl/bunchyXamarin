@@ -3,6 +3,21 @@
   <uses-sdk android:minSdkVersion="15" />
   <application android:label="bunchyXamarin.Android" android:icon="@drawable/icon" android:name="mono.android.app.Application" android:debuggable="true">
     <activity android:label="Bunchy" android:name="bunchyxamarin.android.MainActivity" />
+    <receiver android:permission="com.google.android.c2dm.permission.SEND" android:name="bunchyxamarin.android.PushHandlerBroadcastReceiver">
+      <intent-filter>
+        <action android:name="com.google.android.gcm.intent.RETRY" />
+        <category android:name="bunchyXamarin.Android" />
+      </intent-filter>
+      <intent-filter>
+        <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+        <category android:name="bunchyXamarin.Android" />
+      </intent-filter>
+      <intent-filter>
+        <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+        <category android:name="bunchyXamarin.Android" />
+      </intent-filter>
+    </receiver>
+    <service android:name="bunchyxamarin.android.GcmService" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="bunchyXamarin.Android.mono.MonoRuntimeProvider.__mono_init__" />
     <receiver android:name="mono.android.Seppuku">
       <intent-filter>
@@ -18,4 +33,9 @@
     </activity>
   </application>
   <uses-permission android:name="android.permission.INTERNET" />
+  <permission android:name="bunchyXamarin.Android.permission.C2D_MESSAGE" />
+  <uses-permission android:name="android.permission.WAKE_LOCK" />
+  <uses-permission android:name="bunchyXamarin.Android.permission.C2D_MESSAGE" />
+  <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+  <uses-permission android:name="android.permission.GET_ACCOUNTS" />
 </manifest>

@@ -1,4 +1,8 @@
 bunchyXamarin.Android.MainActivity;bunchyxamarin.android.MainActivity
+bunchyXamarin.Android.PushHandlerBroadcastReceiver;bunchyxamarin.android.PushHandlerBroadcastReceiver
+bunchyXamarin.Android.GcmService;bunchyxamarin.android.GcmService
+Gcm.Client.GcmBroadcastReceiverBase`1;gcm.client.GcmBroadcastReceiverBase_1
+Gcm.Client.GcmServiceBase;gcm.client.GcmServiceBase
 Android.Support.V4.Content.Loader.IOnLoadCompleteListenerImplementor;mono.android.support.v4.content.Loader_OnLoadCompleteListenerImplementor
 Android.Support.V4.View.ViewPager.IOnPageChangeListenerImplementor;mono.android.support.v4.view.ViewPager_OnPageChangeListenerImplementor
 Android.Support.V4.Widget.DrawerLayout.IDrawerListenerImplementor;mono.android.support.v4.widget.DrawerLayout_DrawerListenerImplementor

@@ -38,3 +38,5 @@ C:\Users\craig\Documents\Visual Studio 2013\Projects\bunchyXamarin\Android\obj\D
 C:\Users\craig\Documents\Visual Studio 2013\Projects\bunchyXamarin\Android\obj\Debug\res\drawable\icon.png
 C:\Users\craig\Documents\Visual Studio 2013\Projects\bunchyXamarin\Android\obj\Debug\R.cs.flag
 C:\Users\craig\Documents\Visual Studio 2013\Projects\bunchyXamarin\Android\obj\Debug\uploadflags.txt
+C:\Users\craig\Documents\Visual Studio 2013\Projects\bunchyXamarin\Android\bin\Debug\ByteSmith.WindowsAzure.Messaging.Android.dll
+C:\Users\craig\Documents\Visual Studio 2013\Projects\bunchyXamarin\Android\bin\Debug\GCM.Client.dll
