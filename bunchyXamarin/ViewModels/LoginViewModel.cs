@@ -19,6 +19,7 @@ namespace bunchyXamarin.ViewModels
 
 		private string username = string.Empty;
 		private string errortext = string.Empty;
+		private bool showloading = false;
 
 		public string Errortext {
 			get { return errortext; }
@@ -42,6 +43,16 @@ namespace bunchyXamarin.ViewModels
 			}
 		}
 
+		public bool ShowLoading {
+			get { return showloading; }
+			set { 
+				if (showloading == value)
+					return;
+				showloading = value;
+				OnPropertyChanged("ShowLoading");
+			}
+		}
+
 		private Command<string> loginCommand;
 		public Command LoginCommand
 		{
@@ -54,15 +65,17 @@ namespace bunchyXamarin.ViewModels
 				Errortext = string.Empty;
 				return;
 			}
-				
+			ShowLoading = true;	
 			LoginService service = new LoginService();
 			_TokenResponse = await service.Login(name,"Blue12vl");
 
 			if (!string.IsNullOrWhiteSpace (_TokenResponse.AccessToken)) {
 				User _User = new User{ UserName = _TokenResponse.Username };
 				await navigation.PushAsync (new HomePage(_User){ Title = "Home Page"});
+				ShowLoading = false;
 			} else {
 				Errortext = "Erroring logging in";
+				ShowLoading = false;
 			}
 		}
 

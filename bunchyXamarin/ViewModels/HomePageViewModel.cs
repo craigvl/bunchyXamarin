@@ -1,11 +1,13 @@
 ﻿using System;
 using Xamarin.Forms;
 using System.ComponentModel;
+using System.Collections.Generic;
 
 namespace bunchyXamarin.ViewModels
 {
-	public class HomePageViewModel
+	public class HomePageViewModel : INotifyPropertyChanged
 	{
+
 		private int bunchcount = 0;
 		public int Bunchcount{
 			get { return bunchcount; }
@@ -16,16 +18,17 @@ namespace bunchyXamarin.ViewModels
 				OnPropertyChanged("Bunchcount");
 			}
 		}
-
+			
+		#region INotifyPropertyChanged implementation
 		public event PropertyChangedEventHandler PropertyChanged;
+		#endregion
 
-		private void OnPropertyChanged(string name)
+		public void OnPropertyChanged(string propertyName)
 		{
-			if (PropertyChanged == null) {
+			if (PropertyChanged == null)
 				return;
-			}
 
-			PropertyChanged (this, new PropertyChangedEventArgs (name));
+			PropertyChanged (this, new PropertyChangedEventArgs (propertyName));
 		}
 
 		public HomePageViewModel ()

@@ -122,7 +122,7 @@ namespace bunchyXamarin.Android
 			string message = intent.Extras.GetString("message");
 			if (!string.IsNullOrEmpty(message))
 			{
-				createNotification("New todo item!", "Todo item: " + message);
+				createNotification("New Bunch update!",message);
 				return;
 			}
 

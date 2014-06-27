@@ -45,6 +45,7 @@ namespace bunchyXamarin.Services
 				pre.saveUserName(username);
 				bunchyXamarin.Android.MainActivity ii = new bunchyXamarin.Android.MainActivity();
 				ii.RegisterWithGCMAndriod(Forms.Context);
+				pre.saveToken(tokenResponse.AccessToken);
 				#endif
 
 				return tokenResponse;

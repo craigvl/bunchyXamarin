@@ -21,6 +21,13 @@ namespace bunchyXamarin.Pages
 				Text = "Login"
 			};
 
+			var activity = new ActivityIndicator {
+				//Color = Helpers.Color.DarkBlue.ToFormsColor(),
+				IsEnabled = true
+			};
+			activity.SetBinding<LoginViewModel> (ActivityIndicator.IsVisibleProperty,vmm => vmm.ShowLoading);
+			activity.SetBinding<LoginViewModel> (ActivityIndicator.IsRunningProperty, vmm => vmm.ShowLoading);
+
 			var errorLabel = new Label ();
 			errorLabel.SetBinding<LoginViewModel> (Label.TextProperty, vmm => vmm.Errortext);
 
@@ -30,7 +37,7 @@ namespace bunchyXamarin.Pages
 			Content = new StackLayout {
 				Padding = 10,
 				Spacing = 10,
-				Children = { entry,button,errorLabel}
+				Children = { entry,button,errorLabel,activity}
 			};
 		}
 	}

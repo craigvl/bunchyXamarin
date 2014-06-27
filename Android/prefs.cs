@@ -17,13 +17,25 @@ namespace bunchyXamarin.Android
 		public void saveUserName (string username)
 		{
 			ISharedPreferencesEditor _editor = _prefs.Edit();
-			_editor.PutString("myString", username);
+			_editor.PutString("UserName", username);
 			_editor.Commit();
 		}
 			
 		public string getUserName()
 		{
-			return _prefs.GetString("myString", "Can't find string");
+			return _prefs.GetString("UserName", "Can't find string");
+		}
+
+		public void saveToken (string token)
+		{
+			ISharedPreferencesEditor _editor = _prefs.Edit();
+			_editor.PutString("Token", token);
+			_editor.Commit();
+		}
+
+		public string geToken()
+		{
+			return _prefs.GetString("Token", string.Empty);
 		}
 	}
 }
