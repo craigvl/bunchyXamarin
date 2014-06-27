@@ -30,11 +30,10 @@ namespace bunchyXamarin.Pages
 					
 			var userName = new Label ();
 			//userName.SetBinding<User> (Label.TextProperty, vmm => vmm.UserName);
-			userName.Text = "Welcome " + _User.UserName + _HomePageModel.Location ;
+			userName.Text = "Welcome " + _User.UserName + " " + _HomePageModel.Location + " Bunches" ;
 
-			listview = new ListView();
+			listview = new ListView{ RowHeight = 40 };
 			listview.ItemTemplate = new DataTemplate (typeof(BunchListCell));
-			//listview.ItemsSource = new string [] { "Buy pears", "Buy oranges", "Buy mangos", "Buy apples", "Buy bananas" };
 			listview.ItemsSource = service.GetBunches(_HomePageModel.Location);
 			listview.ItemSelected += async(sender, e) => {
 				activity.IsRunning = true;

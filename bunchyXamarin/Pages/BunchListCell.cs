@@ -25,6 +25,7 @@ namespace bunchyXamarin.Pages
 			var layout = new StackLayout {
 				Padding = new Thickness (20, 0, 0, 0),
 				Orientation = StackOrientation.Horizontal,
+
 				HorizontalOptions = LayoutOptions.StartAndExpand,
 				Children = {label, keentext, keenlabel  }
 			};
