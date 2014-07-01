@@ -55,12 +55,6 @@ namespace bunchyXamarin.Pages
 				this.Navigation.PopAsync();
 			};
 					
-			//buttonIn.SetBinding<BunchDetailViewModel> (Button.CommandProperty, vmm => vmm.AttendCommand);
-			//buttonIn.SetBinding<BunchDetailViewModel> (Button.CommandParameterProperty, );
-			//buttonIn.SetBinding<BunchDetailViewModel> (Button.CommandParameterProperty, vmm => vmm.Username);
-
-
-
 			Content = new StackLayout {
 
 				VerticalOptions = LayoutOptions.StartAndExpand,

@@ -9,7 +9,8 @@ namespace bunchyXamarin.Pages
 		{
 
 			var label = new Label {
-				YAlign = TextAlignment.Center
+				YAlign = TextAlignment.Center,
+				Font = Font.BoldSystemFontOfSize(50)
 			};
 
 			label.SetBinding (Label.TextProperty, "Name");

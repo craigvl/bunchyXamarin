@@ -95,8 +95,7 @@ namespace bunchyXamarin.Services
 
 		public string attend(BunchItem _BunchyItem)
 		{
-
-
+		
 			const string uri = "http://bunchyapi.azurewebsites.net/api/bunch/Attend";
 
 			var webRequest = (HttpWebRequest)WebRequest.Create(uri);
@@ -119,7 +118,6 @@ namespace bunchyXamarin.Services
 			}
 
 			return "true";
-
 
  		}
 	}
