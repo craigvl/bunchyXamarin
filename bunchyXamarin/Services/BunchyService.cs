@@ -93,40 +93,34 @@ namespace bunchyXamarin.Services
 			}
 		}
 
-		public async Task<string> attend(string status, string username, int rideid)
+		public string attend(BunchItem _BunchyItem)
 		{
-			//HttpWebRequest request = new HttpWebRequest(new Uri("http://192.168.56.1:1524/token"));
-			HttpWebRequest request = new HttpWebRequest(new Uri("http://bunchyapi.azurewebsites.net/token"));
-			request.Method = "POST";
 
-			string postString = String.Format("Name={0}&Status={1}&RideID={2}", 
-				HttpUtility.HtmlEncode(username), 
-				HttpUtility.HtmlEncode(status),
-				HttpUtility.HtmlEncode(rideid));
-			//Log.Info("bunchy",postString);
-			byte[] bytes = Encoding.UTF8.GetBytes(postString);
-			string _result;
-			using (Stream requestStream = await request.GetRequestStreamAsync())
+
+			const string uri = "http://bunchyapi.azurewebsites.net/api/bunch/Attend";
+
+			var webRequest = (HttpWebRequest)WebRequest.Create(uri);
+			webRequest.Method = "POST";
+			webRequest.ContentType = "application/json";
+			var deptSerialized = JsonConvert.SerializeObject(_BunchyItem); // <-- This is JSON.NET; it works (deptSerialized has the JSONized versiono of the Department object created above)
+			using (StreamWriter sw = new StreamWriter(webRequest.GetRequestStream()))
 			{
-				requestStream.Write(bytes, 0, bytes.Length);
+				sw.Write(deptSerialized);
 			}
-				
-			try
+			HttpWebResponse httpWebResponse = webRequest.GetResponse() as HttpWebResponse;
+			using (StreamReader sr = new StreamReader(httpWebResponse.GetResponseStream()))
 			{
-				HttpWebResponse httpResponse =  (HttpWebResponse)(await request.GetResponseAsync());
-
-				using (Stream responseStream = httpResponse.GetResponseStream())
+				if (httpWebResponse.StatusCode != HttpStatusCode.OK)
 				{
-					_result = new StreamReader(responseStream).ReadToEnd();
-				}
-				_result = "true";
-				return _result;
+					string message = String.Format("POST failed. Received HTTP {0}", httpWebResponse.StatusCode);
+					throw new ApplicationException(message);
+				}  
+
 			}
-			catch (Exception ex)
-			{
-				_result = "false";
-				return _result;
-			}	
-		}
+
+			return "true";
+
+
+ 		}
 	}
 }

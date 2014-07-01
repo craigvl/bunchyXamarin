@@ -26,20 +26,40 @@ namespace bunchyXamarin.Pages
 				Text = "I'm in"
 			};
 
+			buttonIn.Clicked += (sender, e) => {
+				BunchItem _BunchItem = new BunchItem { name = "frog", status = "In", rideid = _BuchListModel.NextRideId.ToString() };
+				BunchyService _Service = new BunchyService();
+				_Service.attend(_BunchItem);
+				this.Navigation.PopAsync();
+			};
+
 			var buttonOut = new Button {
 				Text = "I'm out"
+			};
+
+			buttonOut.Clicked += (sender, e) => {
+				BunchItem _BunchItem = new BunchItem { name = "frog", status = "Out", rideid = _BuchListModel.NextRideId.ToString() };
+				BunchyService _Service = new BunchyService();
+				_Service.attend(_BunchItem);
+				this.Navigation.PopAsync();
 			};
 
 			var buttonOnWay = new Button {
 				Text = "I'm on my way"
 			};
 
+			buttonOnWay.Clicked += (sender, e) => {
+				BunchItem _BunchItem = new BunchItem { name = "frog", status = "OnWay", rideid = _BuchListModel.NextRideId.ToString() };
+				BunchyService _Service = new BunchyService();
+				_Service.attend(_BunchItem);
+				this.Navigation.PopAsync();
+			};
+					
+			//buttonIn.SetBinding<BunchDetailViewModel> (Button.CommandProperty, vmm => vmm.AttendCommand);
+			//buttonIn.SetBinding<BunchDetailViewModel> (Button.CommandParameterProperty, );
+			//buttonIn.SetBinding<BunchDetailViewModel> (Button.CommandParameterProperty, vmm => vmm.Username);
 
 
-
-			buttonIn.SetBinding<BunchDetailViewModel> (Button.CommandProperty, vmm => vmm.AttendCommand);
-			buttonIn.SetBinding<BunchDetailViewModel> (Button.CommandParameterProperty, );
-			buttonIn.SetBinding<BunchDetailViewModel> (Button.CommandParameterProperty, vmm => vmm.Username);
 
 			Content = new StackLayout {
 

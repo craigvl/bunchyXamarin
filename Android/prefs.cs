@@ -23,7 +23,7 @@ namespace bunchyXamarin.Android
 			
 		public string getUserName()
 		{
-			return _prefs.GetString("UserName", "Can't find string");
+			return _prefs.GetString("UserName", string.Empty);
 		}
 
 		public void saveToken (string token)

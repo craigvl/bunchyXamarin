@@ -40,14 +40,19 @@ namespace bunchyXamarin.Services
 				}
 				TokenResponseModel tokenResponse = JsonConvert.DeserializeObject<TokenResponseModel>(json);
 
-				#if __ANDROID__
-				bunchyXamarin.Android.prefs pre	= new bunchyXamarin.Android.prefs(Forms.Context);
-				pre.saveUserName(username);
-				bunchyXamarin.Android.MainActivity ii = new bunchyXamarin.Android.MainActivity();
-				ii.RegisterWithGCMAndriod(Forms.Context);
-				pre.saveToken(tokenResponse.AccessToken);
-				#endif
+				UserHelper _UserHelper = new UserHelper();
 
+				_UserHelper.SaveUserName(username);
+				_UserHelper.RegisterUserForNotifications(username);
+				_UserHelper.SaveToken(tokenResponse.AccessToken);
+
+				//#if __ANDROID__
+				//bunchyXamarin.Android.prefs pre	= new bunchyXamarin.Android.prefs(Forms.Context);
+				//pre.svaveUserName(username);
+				//bunchyXamarin.Android.MainActivity ii = new bunchyXamarin.Android.MainActivity();
+				//ii.RegisterWithGCMAndriod(Forms.Context);
+				//pre.saveToken(tokenResponse.AccessToken);
+				//#endif
 				return tokenResponse;
 			}
 			catch (Exception ex)
