@@ -32,7 +32,7 @@ namespace bunchyXamarin.Pages
 			//userName.SetBinding<User> (Label.TextProperty, vmm => vmm.UserName);
 			userName.Text = "Welcome " + _User.UserName + " " + _HomePageModel.Location + " Bunches" ;
 
-			listview = new ListView{ RowHeight = 100 };
+			listview = new ListView{ RowHeight = 200 };
 			listview.ItemTemplate = new DataTemplate (typeof(BunchListCell));
 			listview.ItemsSource = service.GetBunches(_HomePageModel.Location);
 			listview.ItemSelected += async(sender, e) => {

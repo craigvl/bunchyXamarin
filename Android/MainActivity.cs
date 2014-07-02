@@ -22,16 +22,12 @@ namespace bunchyXamarin.Android
 			base.OnCreate (bundle);
 			Xamarin.Forms.Forms.Init (this, bundle);
 			//RegisterWithGCM ();
-
 			var username = getUserName (this);
-
 			if (string.IsNullOrWhiteSpace (username)) {
 				SetPage (App.GeLoginPage ());
 			} else {
 				SetPage (App.GetHomePage(username));
 			}
-
-
 		}
 
 		public void RegisterWithGCMAndriod(Context c)

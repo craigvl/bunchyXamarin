@@ -75,9 +75,9 @@ namespace bunchyXamarin.Android
 				
 			bunchyXamarin.Android.MainActivity ii = new bunchyXamarin.Android.MainActivity();
 
-			//string username = ii.getUserName();
+			string username = ii.getUserName(Forms.Context);
 
-			var tags = new List<string>() { "frog" }; // create tags if you want
+			var tags = new List<string>() { username }; // create tags if you want
 
 			try
 			{

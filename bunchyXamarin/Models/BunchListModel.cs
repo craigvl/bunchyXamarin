@@ -14,18 +14,10 @@ namespace bunchyXamarin.Models
 		public string KeenCount { get; set;}
 		[JsonProperty("NextRideId")]
 		public int NextRideId { get; set;}
-
-		//private Command<string> attendCommand;
-		//public Command AttendCommand
-		//{
-		//	get { return attendCommand ?? (attendCommand = new Command<string> (ExecuteAttendCommand));}
-		//}
-
-		//async private void ExecuteAttendCommand(string name, string status, int rideid)
-		//{
-	//		BunchyService service = new BunchyService();
-	//		var test = await service.attend("frog","In",123);
-	//	}
+		[JsonProperty("DayOfWeek")]
+		public string DayOfWeek { get; set;}
+		[JsonProperty("CommentCount")]
+		public string CommentCount { get; set;}
 
 		private string username = string.Empty;
 		public string Username {
