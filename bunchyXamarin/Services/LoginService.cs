@@ -40,11 +40,11 @@ namespace bunchyXamarin.Services
 				}
 				TokenResponseModel tokenResponse = JsonConvert.DeserializeObject<TokenResponseModel>(json);
 
-				UserHelper _UserHelper = new UserHelper();
+				//UserHelper _UserHelper = new UserHelper();
 
-				_UserHelper.SaveUserName(username);
-				_UserHelper.RegisterUserForNotifications(username);
-				_UserHelper.SaveToken(tokenResponse.AccessToken);
+				//_UserHelper.SaveUserName(username);
+				//_UserHelper.RegisterUserForNotifications(username);
+				//_UserHelper.SaveToken(tokenResponse.AccessToken);
 
 				//#if __ANDROID__
 				//bunchyXamarin.Android.prefs pre	= new bunchyXamarin.Android.prefs(Forms.Context);

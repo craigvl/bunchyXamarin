@@ -11,6 +11,7 @@ Android.Support.V4.App.FragmentManager.IOnBackStackChangedListenerImplementor;mo
 Android.Support.V4.View.ActionProvider.ISubUiVisibilityListenerImplementor;mono.android.support.v4.view.ActionProvider_SubUiVisibilityListenerImplementor
 Android.Support.V4.View.ActionProvider.IVisibilityListenerImplementor;mono.android.support.v4.view.ActionProvider_VisibilityListenerImplementor
 Android.Support.V4.View.MenuItemCompat.IOnActionExpandListenerImplementor;mono.android.support.v4.view.MenuItemCompat_OnActionExpandListenerImplementor
+Android.Support.V4.Widget.SwipeRefreshLayout.IOnRefreshListenerImplementor;mono.android.support.v4.widget.SwipeRefreshLayout_OnRefreshListenerImplementor
 Xamarin.Forms.Platform.Android.AndroidActivity;xamarin.forms.platform.android.AndroidActivity
 Xamarin.Forms.Platform.Android.BaseCellView;xamarin.forms.platform.android.BaseCellView
 Xamarin.Forms.Platform.Android.CellRenderer.RendererHolder;xamarin.forms.platform.android.CellRenderer_RendererHolder
@@ -18,10 +19,11 @@ Xamarin.Forms.Platform.Android.EntryCellView;xamarin.forms.platform.android.Entr
 Xamarin.Forms.Platform.Android.TextCellRenderer.TextCellView;xamarin.forms.platform.android.TextCellRenderer_TextCellView
 Xamarin.Forms.Platform.Android.ViewCellRenderer.ViewCellContainer;xamarin.forms.platform.android.ViewCellRenderer_ViewCellContainer
 Xamarin.Forms.Platform.Android.GenericMenuClickListener;xamarin.forms.platform.android.GenericMenuClickListener
-Xamarin.Forms.Platform.Android.BaseViewRenderer;xamarin.forms.platform.android.BaseViewRenderer
+Xamarin.Forms.Platform.Android.VisualElementRenderer`1;xamarin.forms.platform.android.VisualElementRenderer_1
+Xamarin.Forms.Platform.Android.ViewRenderer`2;xamarin.forms.platform.android.ViewRenderer_2
 Xamarin.Forms.Platform.Android.ViewRenderer;xamarin.forms.platform.android.ViewRenderer
-Xamarin.Forms.Platform.Android.NativeRenderer;xamarin.forms.platform.android.NativeRenderer
 Xamarin.Forms.Platform.Android.PlatformRenderer;xamarin.forms.platform.android.PlatformRenderer
+Xamarin.Forms.Platform.Android.RendererFactory.DefaultRenderer;xamarin.forms.platform.android.RendererFactory_DefaultRenderer
 Xamarin.Forms.Platform.Android.ActionSheetRenderer;xamarin.forms.platform.android.ActionSheetRenderer
 Xamarin.Forms.Platform.Android.ActivityIndicatorRenderer;xamarin.forms.platform.android.ActivityIndicatorRenderer
 Xamarin.Forms.Platform.Android.BoxRenderer;xamarin.forms.platform.android.BoxRenderer
@@ -42,6 +44,8 @@ Xamarin.Forms.Platform.Android.ListViewRenderer;xamarin.forms.platform.android.L
 Xamarin.Forms.Platform.Android.MasterDetailContainer;xamarin.forms.platform.android.MasterDetailContainer
 Xamarin.Forms.Platform.Android.MasterDetailRenderer;xamarin.forms.platform.android.MasterDetailRenderer
 Xamarin.Forms.Platform.Android.NavigationMenuRenderer;xamarin.forms.platform.android.NavigationMenuRenderer
+Xamarin.Forms.Platform.Android.NavigationMenuRenderer.MenuElementView;xamarin.forms.platform.android.NavigationMenuRenderer_MenuElementView
+Xamarin.Forms.Platform.Android.NavigationMenuRenderer.MenuAdapter;xamarin.forms.platform.android.NavigationMenuRenderer_MenuAdapter
 Xamarin.Forms.Platform.Android.GenericAnimatorListener;xamarin.forms.platform.android.GenericAnimatorListener
 Xamarin.Forms.Platform.Android.NavigationRenderer;xamarin.forms.platform.android.NavigationRenderer
 Xamarin.Forms.Platform.Android.ObjectJavaBox`1;xamarin.forms.platform.android.ObjectJavaBox_1
@@ -66,6 +70,6 @@ Xamarin.Forms.Platform.Android.TimePickerRenderer.TimePickerListener;xamarin.for
 Xamarin.Forms.Platform.Android.ToolbarRenderer;xamarin.forms.platform.android.ToolbarRenderer
 Xamarin.Forms.Platform.Android.WebRenderer;xamarin.forms.platform.android.WebRenderer
 Xamarin.Forms.Platform.Android.WebRenderer.WebClient;xamarin.forms.platform.android.WebRenderer_WebClient
-Xamarin.Forms.Platform.Android.ViewTracker.AttachTracker;xamarin.forms.platform.android.ViewTracker_AttachTracker
+Xamarin.Forms.Platform.Android.VisualElementTracker.AttachTracker;xamarin.forms.platform.android.VisualElementTracker_AttachTracker
 Xamarin.Forms.Platform.Android.PickerRenderer;xamarin.forms.platform.android.PickerRenderer
 Xamarin.Forms.Platform.Android.PickerRenderer.PickerListener;xamarin.forms.platform.android.PickerRenderer_PickerListener

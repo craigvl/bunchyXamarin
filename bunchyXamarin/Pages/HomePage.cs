@@ -32,7 +32,7 @@ namespace bunchyXamarin.Pages
 			//userName.SetBinding<User> (Label.TextProperty, vmm => vmm.UserName);
 			userName.Text = "Welcome " + _User.UserName + " " + _HomePageModel.Location + " Bunches" ;
 
-			listview = new ListView{ RowHeight = 40 };
+			listview = new ListView{ RowHeight = 100 };
 			listview.ItemTemplate = new DataTemplate (typeof(BunchListCell));
 			listview.ItemsSource = service.GetBunches(_HomePageModel.Location);
 			listview.ItemSelected += async(sender, e) => {
@@ -58,7 +58,9 @@ namespace bunchyXamarin.Pages
 		protected override void OnAppearing()
 		{
 			base.OnAppearing ();
+			activity.IsRunning = true;
 			listview.ItemsSource = service.GetBunches(_HomePageModel.Location);
+			activity.IsRunning = false;
 		}
 	}
 }

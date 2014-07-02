@@ -2,10 +2,10 @@ C:\Users\craig\Documents\Visual Studio 2013\Projects\bunchyXamarin\Android\bin\D
 C:\Users\craig\Documents\Visual Studio 2013\Projects\bunchyXamarin\Android\_external\ByteSmith.WindowsAzure.Messaging.Android.dll
 C:\Users\craig\Documents\Visual Studio 2013\Projects\bunchyXamarin\Components\GCMClient-1.0\lib\android\GCM.Client.dll
 C:\Users\craig\Documents\Visual Studio 2013\Projects\bunchyXamarin\packages\Newtonsoft.Json.6.0.3\lib\portable-net40+sl4+wp7+win8\Newtonsoft.Json.dll
-C:\Users\craig\Documents\Visual Studio 2013\Projects\bunchyXamarin\packages\Xamarin.Android.Support.v4.19.0.2\lib\MonoAndroid10\Xamarin.Android.Support.v4.dll
-C:\Users\craig\Documents\Visual Studio 2013\Projects\bunchyXamarin\packages\Xamarin.Forms.1.0.6186\lib\MonoAndroid10\Xamarin.Forms.Core.dll
-C:\Users\craig\Documents\Visual Studio 2013\Projects\bunchyXamarin\packages\Xamarin.Forms.1.0.6186\lib\MonoAndroid10\Xamarin.Forms.Platform.Android.dll
-C:\Users\craig\Documents\Visual Studio 2013\Projects\bunchyXamarin\packages\Xamarin.Forms.1.0.6186\lib\MonoAndroid10\Xamarin.Forms.Xaml.dll
+C:\Users\craig\Documents\Visual Studio 2013\Projects\bunchyXamarin\packages\Xamarin.Android.Support.v4.19.1.0\lib\MonoAndroid10\Xamarin.Android.Support.v4.dll
+C:\Users\craig\Documents\Visual Studio 2013\Projects\bunchyXamarin\packages\Xamarin.Forms.1.1.1.6206\lib\MonoAndroid10\Xamarin.Forms.Core.dll
+C:\Users\craig\Documents\Visual Studio 2013\Projects\bunchyXamarin\packages\Xamarin.Forms.1.1.1.6206\lib\MonoAndroid10\Xamarin.Forms.Platform.Android.dll
+C:\Users\craig\Documents\Visual Studio 2013\Projects\bunchyXamarin\packages\Xamarin.Forms.1.1.1.6206\lib\MonoAndroid10\Xamarin.Forms.Xaml.dll
 C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Collections.Concurrent.dll
 C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.Collections.dll
 C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\MonoAndroid\v1.0\Facades\System.ComponentModel.Annotations.dll

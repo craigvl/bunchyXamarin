@@ -73,10 +73,11 @@ namespace bunchyXamarin.Android
 				Debugger.Break();
 			}
 				
-			bunchyXamarin.Android.prefs pre	= new bunchyXamarin.Android.prefs(Forms.Context);
-			string username = pre.getUserName();
+			bunchyXamarin.Android.MainActivity ii = new bunchyXamarin.Android.MainActivity();
 
-			var tags = new List<string>() { username }; // create tags if you want
+			//string username = ii.getUserName();
+
+			var tags = new List<string>() { "frog" }; // create tags if you want
 
 			try
 			{
