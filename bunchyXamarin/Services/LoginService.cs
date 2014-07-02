@@ -39,14 +39,14 @@ namespace bunchyXamarin.Services
 					json = new StreamReader(responseStream).ReadToEnd();
 				}
 				TokenResponseModel tokenResponse = JsonConvert.DeserializeObject<TokenResponseModel>(json);
-				#if __ANDROID__
-				//bunchyXamarin.Android.prefs pre	= new bunchyXamarin.Android.prefs(Forms.Context);
-				//pre.svaveUserName(username);
-				bunchyXamarin.Android.MainActivity ii = new bunchyXamarin.Android.MainActivity();
-				ii.saveToken(tokenResponse.AccessToken,Forms.Context);
-				ii.saveUserName(username, Forms.Context);
-				ii.RegisterWithGCMAndriod(Forms.Context);
-				#endif
+
+				App.UserPreferences.SetString("Token",tokenResponse.AccessToken);
+				App.UserPreferences.SetString("UserName",username);
+
+				App.RegisterUser.RegisterWithGCMAndriod();
+
+				//ii.RegisterWithGCMAndriod(Forms.Context);
+			
 				return tokenResponse;
 			}
 			catch (Exception ex)

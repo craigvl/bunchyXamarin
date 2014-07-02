@@ -4,11 +4,14 @@ using System.Threading.Tasks;
 
 namespace bunchyXamarin
 {
-	public class UserHelper
+	public interface IUserPreferences 
 	{
-		public UserHelper()
-		{
-		
-		}
+		void SetString(string key, string value);
+		string GetString(string key);
+	}
+
+	public interface IRegisterUser
+	{
+		void RegisterWithGCMAndriod();
 	}
 }

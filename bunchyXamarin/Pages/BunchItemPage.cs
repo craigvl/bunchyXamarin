@@ -21,16 +21,15 @@ namespace bunchyXamarin.Pages
 			ListView listview = new ListView{ RowHeight = 40};
 			listview.ItemTemplate = new DataTemplate (typeof(BunchRidersCell));
 			listview.ItemsSource = service.GetRiders(_BuchListModel.NextRideId);
-
 			var buttonIn = new Button {
 				Text = "I'm in"
 			};
 
-			buttonIn.Clicked += (sender, e) => {
+			buttonIn.Clicked += async(sender, e) => {
 				BunchItem _BunchItem = new BunchItem { name = "frog", status = "In", rideid = _BuchListModel.NextRideId.ToString() };
 				BunchyService _Service = new BunchyService();
 				_Service.attend(_BunchItem);
-				this.Navigation.PopAsync();
+				await this.Navigation.PopAsync();
 			};
 
 			var buttonOut = new Button {
@@ -38,7 +37,7 @@ namespace bunchyXamarin.Pages
 			};
 
 			buttonOut.Clicked += (sender, e) => {
-				BunchItem _BunchItem = new BunchItem { name = "frog", status = "Out", rideid = _BuchListModel.NextRideId.ToString() };
+						BunchItem _BunchItem = new BunchItem { name = "frog", status = "Out", rideid = _BuchListModel.NextRideId.ToString() };
 				BunchyService _Service = new BunchyService();
 				_Service.attend(_BunchItem);
 				this.Navigation.PopAsync();
@@ -49,7 +48,7 @@ namespace bunchyXamarin.Pages
 			};
 
 			buttonOnWay.Clicked += (sender, e) => {
-				BunchItem _BunchItem = new BunchItem { name = "frog", status = "OnWay", rideid = _BuchListModel.NextRideId.ToString() };
+						BunchItem _BunchItem = new BunchItem { name = "frog", status = "OnWay", rideid = _BuchListModel.NextRideId.ToString() };
 				BunchyService _Service = new BunchyService();
 				_Service.attend(_BunchItem);
 				this.Navigation.PopAsync();

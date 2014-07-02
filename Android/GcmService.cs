@@ -73,9 +73,7 @@ namespace bunchyXamarin.Android
 				Debugger.Break();
 			}
 				
-			bunchyXamarin.Android.MainActivity ii = new bunchyXamarin.Android.MainActivity();
-
-			string username = ii.getUserName(Forms.Context);
+			string username = App.UserPreferences.GetString("UserName");
 
 			var tags = new List<string>() { username }; // create tags if you want
 

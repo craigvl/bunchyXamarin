@@ -58,9 +58,7 @@ namespace bunchyXamarin.Pages
 		protected override void OnAppearing()
 		{
 			base.OnAppearing ();
-			activity.IsRunning = true;
 			listview.ItemsSource = service.GetBunches(_HomePageModel.Location);
-			activity.IsRunning = false;
 		}
 	}
 }

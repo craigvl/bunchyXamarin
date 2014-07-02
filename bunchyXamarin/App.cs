@@ -7,7 +7,16 @@ namespace bunchyXamarin
 {
 	public class App
 	{
-		public static Page GeLoginPage ()
+		public static IUserPreferences UserPreferences { get; private set; }
+		public static IRegisterUser RegisterUser { get; private set;}
+
+		public static void Init(IUserPreferences userPreferencesImpl, IRegisterUser registerUserImp1) 
+		{
+			App.UserPreferences = userPreferencesImpl;
+			App.RegisterUser = registerUserImp1;
+		}
+
+		public static Page GetLoginPage ()
 		{	
 			return new NavigationPage (new LoginPage ());		
 		}
