@@ -46,13 +46,15 @@ namespace bunchyXamarin.Services
 				//_UserHelper.RegisterUserForNotifications(username);
 				//_UserHelper.SaveToken(tokenResponse.AccessToken);
 
-				//#if __ANDROID__
+				#if __ANDROID__
 				//bunchyXamarin.Android.prefs pre	= new bunchyXamarin.Android.prefs(Forms.Context);
 				//pre.svaveUserName(username);
-				//bunchyXamarin.Android.MainActivity ii = new bunchyXamarin.Android.MainActivity();
-				//ii.RegisterWithGCMAndriod(Forms.Context);
-				//pre.saveToken(tokenResponse.AccessToken);
-				//#endif
+				bunchyXamarin.Android.MainActivity ii = new bunchyXamarin.Android.MainActivity();
+
+				ii.RegisterWithGCMAndriod(Forms.Context);
+				ii.saveToken(tokenResponse.AccessToken,Forms.Context);
+				ii.saveUserName(username, Forms.Context);
+				#endif
 				return tokenResponse;
 			}
 			catch (Exception ex)
