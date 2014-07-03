@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace bunchyXamarin
 {
 	[ImplementPropertyChanged]
-	public class LandingPageViewModel 
+	public class HomePageViewModel 
 	{
 		public HomePageModel _HomePageModel { get; set;}
 	

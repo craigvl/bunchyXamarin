@@ -25,12 +25,12 @@
     <Compile Include="$(MSBuildThisFileDirectory)Services\HubService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Helpers\color.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Helpers\UserHelper.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\LandingPage.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\LandingPageViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Pages\BunchListPage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\UserInfo.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\LocationModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\HomePageModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\HomePage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\HomePageViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Pages\" />
