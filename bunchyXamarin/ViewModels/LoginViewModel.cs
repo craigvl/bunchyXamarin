@@ -66,12 +66,16 @@ namespace bunchyXamarin.ViewModels
 				return;
 			}
 			ShowLoading = true;	
-			LoginService service = new LoginService();
-			_TokenResponse = await service.Login(name,"Blue12vl");
+			LoginService loginservice = new LoginService();
+			_TokenResponse = await loginservice.Login(name,"Blue12vl");
+
+			//Example on how to get userinfo from API
+			//BunchyService bunchyservice = new BunchyService ();
+			//UserInfo _UserInfo = bunchyservice.GetUserInfo (_TokenResponse.AccessToken);
 
 			if (!string.IsNullOrWhiteSpace (_TokenResponse.AccessToken)) {
 				User _User = new User{ UserName = _TokenResponse.Username };
-				await navigation.PushAsync (new HomePage(_User){ Title = "Home Page"});
+				await navigation.PushAsync (new BunchListPage(_User){ Title = "Bunch List"});
 				ShowLoading = false;
 			} else {
 				Errortext = "Erroring logging in";

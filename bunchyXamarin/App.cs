@@ -24,7 +24,7 @@ namespace bunchyXamarin
 		public static Page GetHomePage (string username)
 		{	
 			User _User = new User{ UserName = username};
-			return new NavigationPage (new HomePage (_User){ Title = "Home Page" });
+			return new NavigationPage (new BunchListPage (_User){ Title = "Bunch List" });
 		}
 	}
 }

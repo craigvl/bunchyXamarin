@@ -7,20 +7,20 @@ using bunchyXamarin.Pages;
 
 namespace bunchyXamarin.Pages
 {
-	public class HomePage : ContentPage
+	public class BunchListPage : ContentPage
 	{
 		ListView listview;
-		HomePageModel _HomePageModel;
+		LocationModel _LocationModel;
 		BunchyService service;
 		ActivityIndicator activity;
 
-		public HomePage (User _User)
+		public BunchListPage (User _User)
 		{
-			BindingContext = _HomePageModel;
+			//BindingContext = _HomePageModel;
 			Title = "Home Page";
 			service = new BunchyService();
-			_HomePageModel = new HomePageModel ();
-			_HomePageModel = service.GetLocation(_User.UserName);
+			_LocationModel = new LocationModel ();
+			_LocationModel = service.GetLocation(_User.UserName);
 			NavigationPage.SetHasNavigationBar (this, false);
 
 			activity = new ActivityIndicator {
@@ -28,10 +28,10 @@ namespace bunchyXamarin.Pages
 			};
 					
 			var userName = new Label ();
-			userName.Text = "Welcome " + _User.UserName + " " + _HomePageModel.Location + " Bunches" ;
+			userName.Text = "Welcome " + _User.UserName + " " + _LocationModel.Location + " Bunches" ;
 			listview = new ListView{ RowHeight = 200 };
 			listview.ItemTemplate = new DataTemplate (typeof(BunchListCell));
-			listview.ItemsSource = service.GetBunches(_HomePageModel.Location);
+			listview.ItemsSource = service.GetBunches(_LocationModel.Location);
 			listview.ItemSelected += async(sender, e) => {
 				activity.IsRunning = true;
 				if (e.SelectedItem == null)

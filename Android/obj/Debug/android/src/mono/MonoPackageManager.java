@@ -70,6 +70,7 @@ class MonoPackageManager_Resources {
 		"ByteSmith.WindowsAzure.Messaging.Android.dll",
 		"GCM.Client.dll",
 		"Newtonsoft.Json.dll",
+		"PropertyChanged.dll",
 		"Xamarin.Android.Support.v4.dll",
 		"Xamarin.Forms.Core.dll",
 		"Xamarin.Forms.Platform.Android.dll",

@@ -31,7 +31,7 @@ namespace bunchyXamarin.Pages
 				BunchyService _Service = new BunchyService();
 				_Service.attend(_BunchItem);
 				User _u = new User{ UserName = "frog"};
-				this.Navigation.PushAsync(new HomePage(_u));
+				this.Navigation.PushAsync(new BunchListPage(_u));
 			};
 
 			var buttonOut = new Button {
@@ -43,7 +43,7 @@ namespace bunchyXamarin.Pages
 				BunchyService _Service = new BunchyService();
 				_Service.attend(_BunchItem);
 				User _u = new User{ UserName = "frog"};
-				this.Navigation.PushAsync(new HomePage(_u));
+				this.Navigation.PushAsync(new BunchListPage(_u));
 			};
 
 			var buttonOnWay = new Button {

@@ -16,9 +16,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Services\LoginService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\TokenResponseModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\HomePageViewModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Pages\HomePage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\BunchyService.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Models\HomePageModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\BunchListModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Pages\BunchListCell.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\BunchItem.cs" />
@@ -29,6 +27,12 @@
     <Compile Include="$(MSBuildThisFileDirectory)Helpers\color.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\BunchDetailViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Helpers\UserHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\LandingPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\LandingPageViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\BunchListPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\UserInfo.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\LocationModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\HomePageModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Pages\" />
