@@ -60,16 +60,16 @@ namespace bunchyXamarin.Services
 					}
 					else {
 						Console.Out.WriteLine("Response Body: \r\n {0}", content);
-						LocationModel _HomePageModel = JsonConvert.DeserializeObject<LocationModel>(content);
-						return _HomePageModel;
+						LocationModel _LocationModel = JsonConvert.DeserializeObject<LocationModel>(content);
+						return _LocationModel;
 					}
 				}
 			}
 		}
 
-		public List<BunchListModel> GetBunches(string username)
+		public List<BunchListModel> GetBunches(string location)
 		{
-			var request = HttpWebRequest.Create(string.Format(@"http://bunchyapi.azurewebsites.net/api/bunch/get/{0}", "townsville"));
+			var request = HttpWebRequest.Create(string.Format(@"http://bunchyapi.azurewebsites.net/api/bunch/get/{0}",location));
 			//var request = HttpWebRequest.Create(string.Format(@"http://192.168.56.1:1524/api/bunch/get/{0}", "townsville"));
 			request.ContentType = "application/json";
 			request.Method = "GET";
