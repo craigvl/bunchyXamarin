@@ -46,6 +46,7 @@ namespace bunchyXamarin.Services
 			}
 			catch (Exception ex)
 			{
+				Log.Info("bunchy",ex.Message);
 				TokenResponseModel tokenResponse = new TokenResponseModel();
 				tokenResponse.AccessToken = null;
 				return tokenResponse;

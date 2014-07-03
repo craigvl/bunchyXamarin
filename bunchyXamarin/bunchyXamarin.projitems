@@ -15,7 +15,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)Models\User.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\LoginService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\TokenResponseModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\HomePageViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\BunchyService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\BunchListModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Pages\BunchListCell.cs" />
