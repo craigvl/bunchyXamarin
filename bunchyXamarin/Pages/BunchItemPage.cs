@@ -11,7 +11,6 @@ namespace bunchyXamarin.Pages
 	{
 		public BunchItemPage (BunchListModel _BuchListModel)
 		{
-			this.BindingContext = new BunchDetailViewModel (Navigation);
 			this.SetBinding (ContentPage.TitleProperty, "Name");
 			BunchyService service = new BunchyService();
 			string username = App.UserPreferences.GetString("UserName");

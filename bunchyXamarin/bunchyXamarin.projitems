@@ -25,7 +25,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)Pages\BunchRidersCell.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\HubService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Helpers\color.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\BunchDetailViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Helpers\UserHelper.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Pages\LandingPage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\LandingPageViewModel.cs" />

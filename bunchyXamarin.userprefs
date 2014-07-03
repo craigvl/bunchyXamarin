@@ -13,7 +13,7 @@
       <File FileName="Android\Resources\values\Strings.xml" Line="1" Column="1" />
       <File FileName="Android\prefs.cs" Line="1" Column="1" />
       <File FileName="c:\Users\craig\Documents\Visual Studio 2013\Projects\bunchyXamarin\bunchyXamarin\ViewModels\LoginViewModel.cs" Line="1" Column="1" />
-      <File FileName="bunchyXamarin\Pages\BunchListPage.cs" Line="34" Column="46" />
+      <File FileName="bunchyXamarin\Pages\BunchListPage.cs" Line="1" Column="1" />
       <File FileName="c:\Users\craig\Documents\Visual Studio 2013\Projects\bunchyXamarin\bunchyXamarin\Pages\BunchListCell.cs" Line="1" Column="1" />
       <File FileName="bunchyXamarin\Models\LocationModel.cs" Line="1" Column="1" />
       <File FileName="bunchyXamarin\Models\KeenRidersModel.cs" Line="1" Column="1" />
@@ -25,13 +25,12 @@
       <File FileName="bunchyXamarin\Models\BunchListModel.cs" Line="1" Column="1" />
       <File FileName="bunchyXamarin\Models\BunchItem.cs" Line="1" Column="1" />
       <File FileName="bunchyXamarin\Models\User.cs" Line="1" Column="1" />
-      <File FileName="bunchyXamarin\ViewModels\BunchDetailViewModel.cs" Line="1" Column="1" />
       <File FileName="bunchyXamarin\Helpers\UserHelper.cs" Line="1" Column="1" />
-      <File FileName="c:\Users\craig\Documents\Visual Studio 2013\Projects\bunchyXamarin\bunchyXamarin\Services\BunchyService.cs" Line="63" Column="81" />
+      <File FileName="c:\Users\craig\Documents\Visual Studio 2013\Projects\bunchyXamarin\bunchyXamarin\Services\BunchyService.cs" Line="1" Column="1" />
       <File FileName="Android\packages.config" Line="1" Column="1" />
       <File FileName="bunchyXamarin\Pages\LandingPage.cs" Line="1" Column="1" />
-      <File FileName="bunchyXamarin\ViewModels\LandingPageViewModel.cs" Line="21" Column="8" />
-      <File FileName="bunchyXamarin\Models\HomePageModel.cs" Line="20" Column="23" />
+      <File FileName="bunchyXamarin\ViewModels\LandingPageViewModel.cs" Line="1" Column="1" />
+      <File FileName="bunchyXamarin\Models\HomePageModel.cs" Line="11" Column="7" />
       <File FileName="Android\FodyWeavers.xml" Line="1" Column="1" />
       <File FileName="bunchyXamarin\Models\UserInfo.cs" Line="1" Column="1" />
     </Files>
