@@ -1,50 +1,35 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.BX903AWE8B" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="c:\Users\craig\Documents\Visual Studio 2013\Projects\bunchyXamarin\bunchyXamarin\Pages\BunchListCell.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="c:\Users\craig\Documents\Visual Studio 2013\Projects\bunchyXamarin\bunchyXamarin\Pages\HomePage.cs">
     <Files>
       <File FileName="Android\GcmService.cs" Line="1" Column="1" />
-      <File FileName="Android\MainActivity.cs" Line="55" Column="27" />
-      <File FileName="bunchyXamarin\Services\LoginService.cs" Line="49" Column="11" />
+      <File FileName="Android\MainActivity.cs" Line="1" Column="1" />
+      <File FileName="bunchyXamarin\Services\LoginService.cs" Line="1" Column="1" />
       <File FileName="bunchyXamarin\Services\HubService.cs" Line="1" Column="1" />
-      <File FileName="bunchyXamarin\App.cs" Line="11" Column="5" />
+      <File FileName="bunchyXamarin\App.cs" Line="1" Column="1" />
       <File FileName="Android\Constants.cs" Line="1" Column="1" />
       <File FileName="bunchyXamarin\Models\TokenResponseModel.cs" Line="1" Column="1" />
       <File FileName="Android\Assets\AboutAssets.txt" Line="1" Column="1" />
       <File FileName="Android\Resources\values\Strings.xml" Line="1" Column="1" />
       <File FileName="Android\prefs.cs" Line="1" Column="1" />
       <File FileName="c:\Users\craig\Documents\Visual Studio 2013\Projects\bunchyXamarin\bunchyXamarin\ViewModels\LoginViewModel.cs" Line="1" Column="1" />
-      <File FileName="c:\Users\craig\Documents\Visual Studio 2013\Projects\bunchyXamarin\bunchyXamarin\Pages\HomePage.cs" Line="50" Column="4" />
-      <File FileName="c:\Users\craig\Documents\Visual Studio 2013\Projects\bunchyXamarin\bunchyXamarin\Pages\BunchListCell.cs" Line="43" Column="19" />
+      <File FileName="c:\Users\craig\Documents\Visual Studio 2013\Projects\bunchyXamarin\bunchyXamarin\Pages\HomePage.cs" Line="39" Column="6" />
+      <File FileName="c:\Users\craig\Documents\Visual Studio 2013\Projects\bunchyXamarin\bunchyXamarin\Pages\BunchListCell.cs" Line="1" Column="1" />
       <File FileName="bunchyXamarin\Models\HomePageModel.cs" Line="1" Column="1" />
       <File FileName="bunchyXamarin\Models\KeenRidersModel.cs" Line="1" Column="1" />
-      <File FileName="bunchyXamarin\Pages\LoginPage.cs" Line="16" Column="6" />
-      <File FileName="bunchyXamarin\Pages\BunchItemPage.cs" Line="24" Column="27" />
+      <File FileName="bunchyXamarin\Pages\LoginPage.cs" Line="1" Column="1" />
+      <File FileName="bunchyXamarin\Pages\BunchItemPage.cs" Line="22" Column="20" />
       <File FileName="bunchyXamarin\Pages\BunchRidersCell.cs" Line="1" Column="1" />
       <File FileName="bunchyXamarin\ViewModels\HomePageViewModel.cs" Line="1" Column="1" />
       <File FileName="bunchyXamarin\Helpers\color.cs" Line="1" Column="1" />
-      <File FileName="bunchyXamarin\Models\BunchListModel.cs" Line="25" Column="10" />
+      <File FileName="bunchyXamarin\Models\BunchListModel.cs" Line="1" Column="1" />
       <File FileName="bunchyXamarin\Models\BunchItem.cs" Line="1" Column="1" />
       <File FileName="bunchyXamarin\Models\User.cs" Line="1" Column="1" />
       <File FileName="bunchyXamarin\ViewModels\BunchDetailViewModel.cs" Line="1" Column="1" />
       <File FileName="bunchyXamarin\Helpers\UserHelper.cs" Line="1" Column="1" />
-      <File FileName="c:\Users\craig\Documents\Visual Studio 2013\Projects\bunchyXamarin\bunchyXamarin\Services\BunchyService.cs" Line="74" Column="27" />
+      <File FileName="c:\Users\craig\Documents\Visual Studio 2013\Projects\bunchyXamarin\bunchyXamarin\Services\BunchyService.cs" Line="1" Column="1" />
       <File FileName="Android\packages.config" Line="1" Column="1" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State expanded="True">
-          <Node name="bunchyXamarin" expanded="True">
-            <Node name="Helpers" expanded="True" />
-            <Node name="Models" expanded="True" />
-            <Node name="Pages" expanded="True">
-              <Node name="BunchListCell.cs" selected="True" />
-            </Node>
-            <Node name="Services" expanded="True" />
-          </Node>
-          <Node name="bunchyXamarin.Android" expanded="True" />
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

@@ -16,7 +16,7 @@ namespace bunchyXamarin.Pages
 
 		public HomePage (User _User)
 		{
-			BindingContext = _User;
+			BindingContext = _HomePageModel;
 			Title = "Home Page";
 			service = new BunchyService();
 			_HomePageModel = new HomePageModel ();
@@ -24,14 +24,11 @@ namespace bunchyXamarin.Pages
 			NavigationPage.SetHasNavigationBar (this, false);
 
 			activity = new ActivityIndicator {
-				//Color = Helpers.Color.DarkBlue.ToFormsColor(),
 				IsEnabled = true
 			};
 					
 			var userName = new Label ();
-			//userName.SetBinding<User> (Label.TextProperty, vmm => vmm.UserName);
 			userName.Text = "Welcome " + _User.UserName + " " + _HomePageModel.Location + " Bunches" ;
-
 			listview = new ListView{ RowHeight = 200 };
 			listview.ItemTemplate = new DataTemplate (typeof(BunchListCell));
 			listview.ItemsSource = service.GetBunches(_HomePageModel.Location);
@@ -53,12 +50,6 @@ namespace bunchyXamarin.Pages
 				Spacing = 10,  	 
 				Children = {userName, listview,activity}
 			};
-		}
-
-		protected override void OnAppearing()
-		{
-			base.OnAppearing ();
-			listview.ItemsSource = service.GetBunches(_HomePageModel.Location);
 		}
 	}
 }

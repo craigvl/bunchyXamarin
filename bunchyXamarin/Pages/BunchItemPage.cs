@@ -14,6 +14,7 @@ namespace bunchyXamarin.Pages
 			this.BindingContext = new BunchDetailViewModel (Navigation);
 			this.SetBinding (ContentPage.TitleProperty, "Name");
 			BunchyService service = new BunchyService();
+			string username = App.UserPreferences.GetString("UserName");
 
 			var label = new Label ();
 			label.Text = "Keen Users:" + _BuchListModel.KeenCount;
@@ -25,11 +26,12 @@ namespace bunchyXamarin.Pages
 				Text = "I'm in"
 			};
 
-			buttonIn.Clicked += async(sender, e) => {
-				BunchItem _BunchItem = new BunchItem { name = "frog", status = "In", rideid = _BuchListModel.NextRideId.ToString() };
+			buttonIn.Clicked +=(sender, e) => {
+				BunchItem _BunchItem = new BunchItem { name = username, status = "In", rideid = _BuchListModel.NextRideId.ToString() };
 				BunchyService _Service = new BunchyService();
 				_Service.attend(_BunchItem);
-				await this.Navigation.PopAsync();
+				User _u = new User{ UserName = "frog"};
+				this.Navigation.PushAsync(new HomePage(_u));
 			};
 
 			var buttonOut = new Button {
@@ -37,10 +39,11 @@ namespace bunchyXamarin.Pages
 			};
 
 			buttonOut.Clicked += (sender, e) => {
-						BunchItem _BunchItem = new BunchItem { name = "frog", status = "Out", rideid = _BuchListModel.NextRideId.ToString() };
+				BunchItem _BunchItem = new BunchItem { name = username, status = "Out", rideid = _BuchListModel.NextRideId.ToString() };
 				BunchyService _Service = new BunchyService();
 				_Service.attend(_BunchItem);
-				this.Navigation.PopAsync();
+				User _u = new User{ UserName = "frog"};
+				this.Navigation.PushAsync(new HomePage(_u));
 			};
 
 			var buttonOnWay = new Button {
@@ -48,7 +51,7 @@ namespace bunchyXamarin.Pages
 			};
 
 			buttonOnWay.Clicked += (sender, e) => {
-						BunchItem _BunchItem = new BunchItem { name = "frog", status = "OnWay", rideid = _BuchListModel.NextRideId.ToString() };
+				BunchItem _BunchItem = new BunchItem { name = username, status = "OnWay", rideid = _BuchListModel.NextRideId.ToString() };
 				BunchyService _Service = new BunchyService();
 				_Service.attend(_BunchItem);
 				this.Navigation.PopAsync();
