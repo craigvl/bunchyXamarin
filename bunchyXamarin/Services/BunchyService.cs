@@ -67,6 +67,33 @@ namespace bunchyXamarin.Services
 			}
 		}
 
+		public HomePageModel GetHomePageDetails(string username)
+		{
+			var request = HttpWebRequest.Create(string.Format(@"http://bunchyapi.azurewebsites.net/api/bunch/GetHomePageDetails/{0}",username));
+			//var request = HttpWebRequest.Create(string.Format(@"http://192.168.56.1:1524/api/bunch/get/{0}", "townsville"));
+			request.ContentType = "application/json";
+			request.Method = "GET";
+
+			using (HttpWebResponse response = request.GetResponse() as HttpWebResponse)
+			{
+				if (response.StatusCode != HttpStatusCode.OK)
+					Console.Out.WriteLine("Error fetching data. Server returned status code: {0}", response.StatusCode);
+				using (StreamReader reader = new StreamReader(response.GetResponseStream()))
+				{
+					var content = reader.ReadToEnd();
+					if(string.IsNullOrWhiteSpace(content)) {
+						Console.Out.WriteLine("Response contained empty body...");
+						return null;
+					}
+					else {
+						Console.Out.WriteLine("Response Body: \r\n {0}", content);
+						HomePageModel _HomePageModel = JsonConvert.DeserializeObject<HomePageModel>(content);
+						return _HomePageModel;
+					}
+				}
+			}
+		}
+
 		public List<BunchListModel> GetBunches(string location)
 		{
 			var request = HttpWebRequest.Create(string.Format(@"http://bunchyapi.azurewebsites.net/api/bunch/get/{0}",location));
@@ -87,8 +114,8 @@ namespace bunchyXamarin.Services
 					}
 					else {
 						Console.Out.WriteLine("Response Body: \r\n {0}", content);
-						List<BunchListModel> _HomePageModel = JsonConvert.DeserializeObject<List<BunchListModel>>(content);
-						return _HomePageModel;
+						List<BunchListModel> _BunchListModel = JsonConvert.DeserializeObject<List<BunchListModel>>(content);
+						return _BunchListModel;
 					}
 				}
 			}

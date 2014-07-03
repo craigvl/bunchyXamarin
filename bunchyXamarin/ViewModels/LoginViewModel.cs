@@ -75,7 +75,8 @@ namespace bunchyXamarin.ViewModels
 
 			if (!string.IsNullOrWhiteSpace (_TokenResponse.AccessToken)) {
 				User _User = new User{ UserName = _TokenResponse.Username };
-				await navigation.PushAsync (new BunchListPage(_User){ Title = "Bunch List"});
+				//await navigation.PushAsync (new BunchListPage(_User){ Title = "Bunch List"});
+				await navigation.PushAsync (new HomePage(){ Title = "Bunch List"});
 				ShowLoading = false;
 			} else {
 				Errortext = "Erroring logging in";
