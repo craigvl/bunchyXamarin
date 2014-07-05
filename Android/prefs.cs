@@ -3,6 +3,7 @@ using Android.Content;
 using Android.Preferences;
 using Android.App;
 using Gcm.Client;
+using bunchyXamarin.Helpers;
 
 namespace bunchyXamarin.Android
 {

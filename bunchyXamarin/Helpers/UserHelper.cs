@@ -2,7 +2,7 @@
 using Xamarin.Forms;
 using System.Threading.Tasks;
 
-namespace bunchyXamarin
+namespace bunchyXamarin.Helpers
 {
 	public interface IUserPreferences 
 	{

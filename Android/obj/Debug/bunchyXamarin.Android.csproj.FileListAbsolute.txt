@@ -43,3 +43,5 @@ C:\Users\craig\Documents\Visual Studio 2013\Projects\bunchyXamarin\Android\obj\D
 C:\Users\craig\Documents\Visual Studio 2013\Projects\bunchyXamarin\Android\bin\Debug\FodyWeavers.xml
 C:\Users\craig\Documents\Visual Studio 2013\Projects\bunchyXamarin\Android\bin\Debug\PropertyChanged.dll
 C:\Users\craig\Documents\Visual Studio 2013\Projects\bunchyXamarin\Android\bin\Debug\PropertyChanged.xml
+C:\Users\craig\Documents\Visual Studio 2013\Projects\bunchyXamarin\Android\bin\Debug\ExifLib.dll
+C:\Users\craig\Documents\Visual Studio 2013\Projects\bunchyXamarin\Android\bin\Debug\Xamarin.Forms.Labs.dll

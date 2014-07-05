@@ -2,6 +2,7 @@
 using Xamarin.Forms;
 using bunchyXamarin.Pages;
 using bunchyXamarin.Models;
+using bunchyXamarin.Helpers;
 
 namespace bunchyXamarin
 {
@@ -12,6 +13,10 @@ namespace bunchyXamarin
 
 		public static void Init(IUserPreferences userPreferencesImpl, IRegisterUser registerUserImp1) 
 		{
+			//var device = Resolver.Resolve<IDevice>();
+			//if (!device.PhoneService.IsNetworkAvailable ?? false) {
+
+			//}
 			App.UserPreferences = userPreferencesImpl;
 			App.RegisterUser = registerUserImp1;
 		}

@@ -17,6 +17,9 @@ namespace bunchyXamarin.Models
 		[JsonProperty("bunchcount")]
 		public int bunchcount { get; set; }
 
+		[JsonProperty("nextbunchday")]
+		public string nextbunchday { get; set; }
+
 		public HomePageModel ()
 		{
 

@@ -1,35 +1,35 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.BX903AWE8B" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="c:\Users\craig\Documents\Visual Studio 2013\Projects\bunchyXamarin\bunchyXamarin\ViewModels\LoginViewModel.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.MonoForAndroid_API_15" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="bunchyXamarin\Pages\HomePage.cs">
     <Files>
       <File FileName="Android\GcmService.cs" Line="1" Column="1" />
-      <File FileName="Android\MainActivity.cs" Line="29" Column="1" />
-      <File FileName="bunchyXamarin\Services\LoginService.cs" Line="46" Column="5" />
+      <File FileName="Android\MainActivity.cs" Line="1" Column="1" />
+      <File FileName="bunchyXamarin\Services\LoginService.cs" Line="1" Column="1" />
       <File FileName="bunchyXamarin\Services\HubService.cs" Line="1" Column="1" />
-      <File FileName="bunchyXamarin\App.cs" Line="22" Column="4" />
+      <File FileName="bunchyXamarin\App.cs" Line="1" Column="1" />
       <File FileName="Android\Constants.cs" Line="1" Column="1" />
       <File FileName="bunchyXamarin\Models\TokenResponseModel.cs" Line="1" Column="1" />
       <File FileName="Android\Assets\AboutAssets.txt" Line="1" Column="1" />
       <File FileName="Android\Resources\values\Strings.xml" Line="1" Column="1" />
-      <File FileName="Android\prefs.cs" Line="23" Column="1" />
-      <File FileName="c:\Users\craig\Documents\Visual Studio 2013\Projects\bunchyXamarin\bunchyXamarin\ViewModels\LoginViewModel.cs" Line="67" Column="5" />
-      <File FileName="bunchyXamarin\Pages\BunchListPage.cs" Line="34" Column="1" />
+      <File FileName="Android\prefs.cs" Line="1" Column="1" />
+      <File FileName="c:\Users\craig\Documents\Visual Studio 2013\Projects\bunchyXamarin\bunchyXamarin\ViewModels\LoginViewModel.cs" Line="29" Column="5" />
+      <File FileName="bunchyXamarin\Pages\BunchListPage.cs" Line="1" Column="1" />
       <File FileName="c:\Users\craig\Documents\Visual Studio 2013\Projects\bunchyXamarin\bunchyXamarin\Pages\BunchListCell.cs" Line="1" Column="1" />
-      <File FileName="bunchyXamarin\Models\LocationModel.cs" Line="6" Column="28" />
+      <File FileName="bunchyXamarin\Models\LocationModel.cs" Line="1" Column="1" />
       <File FileName="bunchyXamarin\Models\KeenRidersModel.cs" Line="1" Column="1" />
-      <File FileName="bunchyXamarin\Pages\LoginPage.cs" Line="22" Column="6" />
+      <File FileName="bunchyXamarin\Pages\LoginPage.cs" Line="1" Column="1" />
       <File FileName="bunchyXamarin\Pages\BunchItemPage.cs" Line="1" Column="1" />
       <File FileName="bunchyXamarin\Pages\BunchRidersCell.cs" Line="1" Column="1" />
-      <File FileName="bunchyXamarin\Helpers\color.cs" Line="1" Column="1" />
-      <File FileName="bunchyXamarin\Models\BunchListModel.cs" Line="14" Column="8" />
+      <File FileName="bunchyXamarin\Helpers\CustomColour.cs" Line="13" Column="51" />
+      <File FileName="bunchyXamarin\Models\BunchListModel.cs" Line="1" Column="1" />
       <File FileName="bunchyXamarin\Models\BunchItem.cs" Line="1" Column="1" />
       <File FileName="bunchyXamarin\Models\User.cs" Line="1" Column="1" />
       <File FileName="bunchyXamarin\Helpers\UserHelper.cs" Line="1" Column="1" />
-      <File FileName="c:\Users\craig\Documents\Visual Studio 2013\Projects\bunchyXamarin\bunchyXamarin\Services\BunchyService.cs" Line="95" Column="1" />
+      <File FileName="c:\Users\craig\Documents\Visual Studio 2013\Projects\bunchyXamarin\bunchyXamarin\Services\BunchyService.cs" Line="1" Column="1" />
       <File FileName="Android\packages.config" Line="1" Column="1" />
-      <File FileName="bunchyXamarin\Pages\HomePage.cs" Line="20" Column="29" />
-      <File FileName="bunchyXamarin\ViewModels\HomePageViewModel.cs" Line="14" Column="26" />
-      <File FileName="bunchyXamarin\Models\HomePageModel.cs" Line="25" Column="1" />
+      <File FileName="bunchyXamarin\Pages\HomePage.cs" Line="40" Column="5" />
+      <File FileName="bunchyXamarin\ViewModels\HomePageViewModel.cs" Line="18" Column="36" />
+      <File FileName="bunchyXamarin\Models\HomePageModel.cs" Line="1" Column="1" />
       <File FileName="Android\FodyWeavers.xml" Line="1" Column="1" />
       <File FileName="bunchyXamarin\Models\UserInfo.cs" Line="1" Column="1" />
     </Files>
@@ -37,18 +37,14 @@
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="bunchyXamarin" expanded="True">
-            <Node name="Models" expanded="True" />
-            <Node name="Pages" expanded="True" />
-            <Node name="Services" expanded="True" />
-            <Node name="ViewModels" expanded="True">
-              <Node name="LoginViewModel.cs" selected="True" />
+            <Node name="Helpers" expanded="True" />
+            <Node name="Pages" expanded="True">
+              <Node name="HomePage.cs" selected="True" />
             </Node>
+            <Node name="ViewModels" expanded="True" />
           </Node>
           <Node name="bunchyXamarin.Android" expanded="True" />
         </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
