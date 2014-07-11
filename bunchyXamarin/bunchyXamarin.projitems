@@ -31,6 +31,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Pages\HomePage.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\HomePageViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Helpers\CustomColour.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Pages\TestPage.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Pages\" />
