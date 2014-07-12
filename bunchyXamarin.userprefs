@@ -1,6 +1,6 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.BX903AWE8B" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Android\obj\Debug\android\AndroidManifest.xml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Android\obj\Debug\__library_projects__\Xamarin.Forms.Labs.Droid\library_project_imports\res\values\styles.xml">
     <Files>
       <File FileName="Android\GcmService.cs" Line="1" Column="1" />
       <File FileName="Android\MainActivity.cs" Line="1" Column="1" />
@@ -32,12 +32,13 @@
       <File FileName="Android\FodyWeavers.xml" Line="1" Column="1" />
       <File FileName="bunchyXamarin\Models\UserInfo.cs" Line="1" Column="1" />
       <File FileName="bunchyXamarin\Pages\TestPage.cs" Line="1" Column="1" />
-      <File FileName="Android\obj\Debug\android\AndroidManifest.xml" Line="21" Column="27" />
+      <File FileName="Android\obj\Debug\android\AndroidManifest.xml" Line="1" Column="1" />
       <File FileName="Android\Resources\Resource.designer.cs" Line="1" Column="1" />
       <File FileName="Android\Resources\AboutResources.txt" Line="1" Column="1" />
       <File FileName="Android\Properties\AndroidManifest.xml" Line="1" Column="1" />
       <File FileName="Android\Properties\AssemblyInfo.cs" Line="1" Column="1" />
       <File FileName="Android\Resources\values\Strings.xml" Line="1" Column="1" />
+      <File FileName="Android\obj\Debug\__library_projects__\Xamarin.Forms.Labs.Droid\library_project_imports\res\values\styles.xml" Line="1" Column="409" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

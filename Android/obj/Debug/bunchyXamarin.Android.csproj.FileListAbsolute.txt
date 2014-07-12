@@ -45,3 +45,7 @@ C:\Users\craig\Documents\Visual Studio 2013\Projects\bunchyXamarin\Android\obj\D
 C:\Users\craig\Documents\Visual Studio 2013\Projects\bunchyXamarin\Android\obj\Debug\res\drawable\icon.png
 C:\Users\craig\Documents\Visual Studio 2013\Projects\bunchyXamarin\Android\obj\Debug\R.cs.flag
 C:\Users\craig\Documents\Visual Studio 2013\Projects\bunchyXamarin\Android\obj\Debug\uploadflags.txt
+C:\Users\craig\Documents\Visual Studio 2013\Projects\bunchyXamarin\Android\obj\Debug\bunchyXamarin.Android.csprojResolveAssemblyReference.cache
+C:\Users\craig\Documents\Visual Studio 2013\Projects\bunchyXamarin\Android\bin\Debug\Xamarin.Forms.Labs.Droid.dll
+C:\Users\craig\Documents\Visual Studio 2013\Projects\bunchyXamarin\Android\bin\Debug\Xamarin.Forms.Labs.xml
+C:\Users\craig\Documents\Visual Studio 2013\Projects\bunchyXamarin\Android\bin\Debug\Xamarin.Forms.Labs.Droid.xml
