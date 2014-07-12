@@ -1,5 +1,5 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.BX903AWE8B" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Android.MonoForAndroid_API_15" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Android\obj\Debug\__library_projects__\Xamarin.Forms.Labs.Droid\library_project_imports\res\values\styles.xml">
     <Files>
       <File FileName="Android\GcmService.cs" Line="1" Column="1" />

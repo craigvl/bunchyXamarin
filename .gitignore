@@ -39,6 +39,12 @@ Icon
 # Built application files
 *.apk
 *.ap_
+*/bin/*
+*/obj/*
+*/*/bin/*
+*/*/obj/*
+*/*/*/bin/*
+*/*/*/obj/*
 
 # Files for the Dalvik VM
 *.dex
